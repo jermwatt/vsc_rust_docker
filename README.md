@@ -1,11 +1,6 @@
 # vsc_rust_docker
 
-Lightning fast and portable way to get started with rust using Visual Studio Code IDE in the browser.
-
-This repository consists of a fork of the docker version of [code_server](https://github.com/coder/code-server) for in-browser Visual Studio Code, with basic usability enhancements baked in (e.g., external volume for saved extensions).  Rust in docker employed in VSC at the command line via a simple docker-in-docker pattern.
-
-The only dependencies are a browser of your choice and having [docker and docker-compose](https://docs.docker.com/compose/install/) installed on your machine.
-
+Lightning fast and portable way to get started with rust using Visual Studio Code IDE in the browser via a simple docker-in-docker pattern.  No assembly required - the only dependencies are a browser of your choice and having [docker and docker-compose](https://docs.docker.com/compose/install/) installed on your local machine.
 
 ## Getting started with VSC in browser
 
@@ -25,15 +20,15 @@ This will open up password prompt to enter your VSC container in the browser.  T
 
 You should adjust this password in 
 
-```/vsc_ide/configs/code-server/config.yaml```
+```/vsc_rust_docker/vsc_ide/configs/code-server/config.yaml```
 
 Any installed VSC extensions you install can be found locally on your machine at
 
-```/vsc_ide/extensions```
+```/vsc_rust_docker/vsc_ide/extensions```
 
-Your rust projects will be stored locally at 
+Any Rust projects you create in VSC will also be stored locally at 
 
-```/vsc_ide/app/rust_projects```
+```/vsc_rust_docker/vsc_ide/app/rust_projects```
 
 
 
@@ -44,6 +39,8 @@ Open a terminal in VSC, and cd to the `/projects` directory.  This directory con
 Once here you can startup your Rust container by typing the command below in your VSC terminal
 
 ```docker-compose run --rm rust```
+
+The first time you run this command the offical Rust docker image will be pulled to your local machine.
 
 Once executed properly, your VSC terminal is now your Rust shell.  (you are in your Rust container)
 
