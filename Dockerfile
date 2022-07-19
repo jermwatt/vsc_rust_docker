@@ -1,15 +1,14 @@
-
 FROM codercom/code-server:latest
 
-RUN sudo apt update && sudo apt upgrade -y
-RUN sudo apt install -y vim ufw curl git libffi-dev libssl-dev python3-dev python3 python3-pip apt-transport-https ca-certificates curl gnupg2 software-properties-common build-essential libcurl4-openssl-dev libxkbfile-dev
+USER root
 
-RUN curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-RUN sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
-RUN sudo apt update
-RUN sudo apt -y install docker-ce
+RUN apt update
+RUN apt upgrade -y
+RUN apt-get update
+RUN apt install -y build-essential
+RUN apt install -y curl
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 
-RUN sudo curl -L https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-RUN sudo chmod +x /usr/local/bin/docker-compose
+
 
 

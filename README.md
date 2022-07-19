@@ -1,6 +1,6 @@
 # vsc_rust_docker
 
-Lightning fast and portable way to get started with rust using Visual Studio Code IDE in the browser via a simple docker-in-docker pattern.  No assembly required - the only dependencies are a browser of your choice and having [docker and docker-compose](https://docs.docker.com/compose/install/) installed on your local machine.
+Fast and portable way to get started with rust using Visual Studio Code IDE in the browser via a simple docker pattern.  No assembly required - the only dependencies are a browser of your choice and having [docker and docker-compose](https://docs.docker.com/compose/install/) installed on your local machine.
 
 ## Getting started with VSC in browser
 
@@ -35,14 +35,6 @@ Any Rust projects you create in VSC will also be stored locally at
 ### Getting started with Rust 
 
 Open a terminal in VSC, and cd to the `/projects` directory.  This directory contains the primary Rust docker-compose file.
-
-Once here you can startup your Rust container by typing the command below in your VSC terminal
-
-```docker-compose run --rm rust```
-
-The first time you run this command the offical Rust docker image will be pulled to your local machine.
-
-Once executed properly, your VSC terminal is now your Rust shell.  (you are in your Rust container)
 
 To start a new test rust project cd into the `/projects` and type
 
