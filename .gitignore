@@ -16,5 +16,4 @@ __pycache__
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-apps/vsc_ide/extensions
 apps/vsc_ide/config
