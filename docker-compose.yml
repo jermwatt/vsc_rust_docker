@@ -1,8 +1,9 @@
 version: "3.8"
 services:
-  code_server:
-    image: jermwatt/vsc_rust_docker
-    container_name: vsc_rust_docker
+  vsc_rust_docker:
+    build:
+      context: .
+    container_name: vsc_rust_docker_in_docker
     user: root
     environment:
       - DOCKER_USER=$USER
