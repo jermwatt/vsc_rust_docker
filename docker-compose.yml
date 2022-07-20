@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  code_server:
+  vsc_rust:
     image: jermwatt/vsc_rust_docker
     container_name: vsc_rust_docker
     user: root
