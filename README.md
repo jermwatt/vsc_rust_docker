@@ -4,7 +4,7 @@ Fast and portable way to get started with rust using Visual Studio Code IDE in t
 
 ## Getting started with VSC in browser
 
-After pulling the repository, cd into and spinup the compose file by typing
+After pulling [the repository](https://github.com/jermwatt/vsc_rust_docker), cd into and spinup the compose file by typing
 
 ```docker-compose up -d```
 
