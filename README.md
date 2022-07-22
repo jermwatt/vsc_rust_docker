@@ -2,6 +2,10 @@
 
 Fast and portable way to get started with rust using Visual Studio Code IDE in the browser via a simple docker pattern.  No assembly required - the only dependencies are a browser of your choice and having [docker and docker-compose](https://docs.docker.com/compose/install/) installed on your local machine.
 
+A similar but different pattern that keeps rust in a separate container using a docker-in-docker pattern can be found [in this branch](https://github.com/jermwatt/vsc_rust_docker/tree/docker-in-docker).
+
+Alternatively, if you a simple but powerful vim setup can be found [in this branch](https://github.com/jermwatt/vsc_rust_docker/tree/vim_zsh).
+
 ## Getting started with VSC in browser
 
 After pulling [the repository](https://github.com/jermwatt/vsc_rust_docker), cd into and spinup the compose file by typing
