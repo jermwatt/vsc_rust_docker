@@ -1,17 +1,8 @@
 version: "3.8"
 services:
-  vsc_rust:
-    image: jermwatt/vsc_rust_docker
-    container_name: vsc_rust_docker
-    user: root
-    environment:
-      - DOCKER_USER=$USER
-      - ABSPATH=${PWD}/vsc_ide/app
-    volumes:
-      - ./vsc_ide/app:/home/coder/project
-      - ./vsc_ide/configs/code-server:/root/.config/code-server
-      - ./vsc_ide/extensions:/root/.local/share/code-server/extensions
-      - /var/run/docker.sock:/var/run/docker.sock
-    ports:
-      - 8080:8080
-    restart: unless-stopped
+  vim_rust:
+    build: .
+    image: vim_rust
+    container_name: vim_rust
+    command: >
+      /bin/sh -c "tail -f /dev/null"

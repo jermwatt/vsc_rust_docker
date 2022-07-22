@@ -1,35 +1,20 @@
-# vsc_rust_docker
+# Quick start Rust with a vim container
 
-Fast and portable way to get started with rust using Visual Studio Code IDE in the browser via a simple docker pattern.  No assembly required - the only dependencies are a browser of your choice and having [docker and docker-compose](https://docs.docker.com/compose/install/) installed on your local machine.
+Fast and portable way to get started with rust using suped up vim IDE and zsh (both setup  with good base settings and plugin)  in a docker container.  No assembly required - the only dependencies are [docker and docker-compose](https://docs.docker.com/compose/install/) which need be installed on your local machine.
 
-## Getting started with VSC in browser
+## Getting started with Rust with suped up vim + zsh in container
 
-After pulling [the repository](https://github.com/jermwatt/vsc_rust_docker), cd into and spinup the compose file by typing
+After pulling [the repository](https://github.com/jermwatt/vsc_rust_docker/tree/vim_zsh) , cd into and spinup the compose file by typing
 
 ```docker-compose up -d```
 
-Running this the first time will pull the associated docker image.
+Running this the first time will build  the associated docker image.
 
-Once the compose spinup process is complete, open your browser of choice and type the following into the address bar
+Once the compose spinup process is complete type
 
-```http://localhost:8080```
+```docker container exec -u 0 -it vim_rust bash```
 
-This will open up password prompt to enter your VSC container in the browser.  The starting password is 
-
-```temp_pass```
-
-You should adjust this password in 
-
-```/vsc_rust_docker/vsc_ide/configs/code-server/config.yaml```
-
-Any installed VSC extensions you install can be found locally on your machine at
-
-```/vsc_rust_docker/vsc_ide/extensions```
-
-Any Rust projects you create in VSC will also be stored locally at 
-
-```/vsc_rust_docker/vsc_ide/app/rust_projects```
-
+to enter the container.
 
 
 ### Getting started with Rust 
