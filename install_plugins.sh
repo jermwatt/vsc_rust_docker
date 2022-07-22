@@ -7,6 +7,7 @@ git clone https://github.com/farmergreg/vim-lastplace.git /root/.vim/pack/plugin
 git clone https://github.com/godlygeek/tabular.git /root/.vim/pack/plugins/start/tabular
 git clone https://github.com/ctrlpvim/ctrlp.vim /root/.vim/pack/plugins/start/ctrlp.vim
 git clone https://github.com/jiangmiao/auto-pairs.git /root/.vim/pack/plugins/start/auto-pairs
+git clone https://github.com/rust-lang/rust.vim /root/.vim/pack/plugins/start/rust.vim
 
 # zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions /root/.oh-my-zsh/custom/plugins/zsh-autosuggestions
