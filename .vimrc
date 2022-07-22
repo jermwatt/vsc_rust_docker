@@ -1,5 +1,6 @@
 set number
-syntax on 
+syntax enable
+filetype plugin indent on 
 colorscheme ron
 set bg=dark
 set tabstop=4
